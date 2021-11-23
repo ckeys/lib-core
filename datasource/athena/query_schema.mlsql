@@ -2,7 +2,7 @@ set  inputTable="mnist" where type="defaultParam";
 set  pythonEnv = ":" where type="defaultParam";
 set  outputTable="${inputTable}_out" where type="defaultParam";
 
-!pyInclude local "github.com/ckeys/lib-core/tree/athena_andie.datasource.athena.query_schema.py" named query_schema;
+!pyInclude local "github.com/ckeys/lib-core.datasource.athena.query_schema.py" named query_schema;
 !python conf "st(field(test,string))";
 
 run command as Ray.`` where
