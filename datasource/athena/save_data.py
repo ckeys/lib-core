@@ -17,7 +17,6 @@ from retrying import retry
 import configparser
 import io
 
-# 这句是为了代码提示
 context:PythonContext = context
 conf = context.conf
 ray_context = RayContext.connect(globals(), conf["rayAddress"])
