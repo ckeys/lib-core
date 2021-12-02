@@ -73,13 +73,6 @@ def get_query_result(athena, _id, next_token=None, batch_size=512):
         if next_token is None:
             break
 
-# access_id = 'AKIAUTR2QB73PR44MJWB'
-# access_key = 'LupK9ocGHsABHj+ujYJq6HyIHDDNqkK0UxR7XiOb'
-# region = 'eu-west-1'
-# database = 'andie_database'
-# s3_bucket = 'andie-huang'
-# suffix='test'
-
 access_id = conf['access_id']
 access_key = conf['access_key']
 region = conf['region']
